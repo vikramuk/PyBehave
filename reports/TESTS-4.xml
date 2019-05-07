@@ -1,0 +1,20 @@
+<testsuite errors="0" failures="0" hostname="LP-5CD84715D5" name="4.parametrized" skipped="0" tests="1" time="0.009027" timestamp="2019-05-06T23:26:13.935850"><testcase classname="4.parametrized" name="Parametrized given, when, thens" status="passed" time="0.009027"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: Parametrized given, when, thens
+    Given there are <start> cucumbers ... passed in 0.003s
+    When I eat <eat> cucumbers ... passed in 0.004s
+    Then I should have <left> cucumbers ... passed in 0.003s
+      | start | eat | left |
+      | 5     | 2   | 3    |
+
+@scenario.end
+--------------------------------------------------------------------------------
+
+Captured stdout:
+Start Cucumber
+Eat Cucumber
+Left Cucumber
+
+]]>
+</system-out></testcase></testsuite>

@@ -1,0 +1,37 @@
+<testsuite errors="0" failures="0" hostname="LP-5CD84715D5" name="ScenarioOutline.Testing objects" skipped="0" tests="2" time="0.023071" timestamp="2019-05-06T23:26:14.087433"><testcase classname="ScenarioOutline.Testing objects" name="Given the inputs below --  Input Variables @1.1" status="passed" time="0.012032"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario Outline: Given the inputs below --  Input Variables @1.1
+    Given a {"name": "Fred", "age":2} and [1,2,"three"] ... passed in 0.006s
+    When we insert them ... passed in 0.004s
+    Then we confirm the result in the database ... passed in 0.002s
+
+@scenario.end
+--------------------------------------------------------------------------------
+
+Captured stdout:
+inserting dictionary {'name': 'Fred', 'age': 2}
+inserting list [1, 2, 'three']
+checking dictionary {'name': 'Fred', 'age': 2}
+checking list [1, 2, 'three']
+
+]]>
+</system-out></testcase><testcase classname="ScenarioOutline.Testing objects" name="Given the inputs below --  Input Variables @1.2" status="passed" time="0.011039"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario Outline: Given the inputs below --  Input Variables @1.2
+    Given a {"name": "Test", "age":2} and [1,2,"For"] ... passed in 0.005s
+    When we insert them ... passed in 0.003s
+    Then we confirm the result in the database ... passed in 0.003s
+
+@scenario.end
+--------------------------------------------------------------------------------
+
+Captured stdout:
+inserting dictionary {'name': 'Test', 'age': 2}
+inserting list [1, 2, 'For']
+checking dictionary {'name': 'Test', 'age': 2}
+checking list [1, 2, 'For']
+
+]]>
+</system-out></testcase></testsuite>

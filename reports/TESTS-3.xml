@@ -1,0 +1,52 @@
+<testsuite errors="0" failures="0" hostname="LP-5CD84715D5" name="3.My test feature with the Behave BDD" skipped="0" tests="3" time="0.02306" timestamp="2019-05-06T23:26:13.911275"><testcase classname="3.My test feature with the Behave BDD" name="A simple test#1" status="passed" time="0.007019"><system-out>
+<![CDATA[
+@scenario.begin
+
+  @Linux @slow
+  Scenario: A simple test#1
+    Given you are happy ... passed in 0.001s
+    When someone says hi ... passed in 0.003s
+    Then you smile ... passed in 0.003s
+
+@scenario.end
+--------------------------------------------------------------------------------
+
+Captured stdout:
+THIS IS NEVER DISPLAYED IN THE CONSOLE
+
+]]>
+</system-out></testcase><testcase classname="3.My test feature with the Behave BDD" name="A simple test#2" status="passed" time="0.008021"><system-out>
+<![CDATA[
+@scenario.begin
+
+  @WINDOWS @wip
+  Scenario: A simple test#2
+    Given you are happy ... passed in 0.002s
+    When someone says hi ... passed in 0.004s
+    Then you smile ... passed in 0.002s
+
+@scenario.end
+--------------------------------------------------------------------------------
+
+Captured stdout:
+THIS IS NEVER DISPLAYED IN THE CONSOLE
+
+]]>
+</system-out></testcase><testcase classname="3.My test feature with the Behave BDD" name="A simple test#3" status="passed" time="0.00802"><system-out>
+<![CDATA[
+@scenario.begin
+
+  @use.with_browser=chrome
+  Scenario: A simple test#3
+    Given you are happy ... passed in 0.002s
+    When someone says hi ... passed in 0.004s
+    Then you smile ... passed in 0.002s
+
+@scenario.end
+--------------------------------------------------------------------------------
+
+Captured stdout:
+THIS IS NEVER DISPLAYED IN THE CONSOLE
+
+]]>
+</system-out></testcase></testsuite>

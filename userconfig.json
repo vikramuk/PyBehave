@@ -1,0 +1,6 @@
+{
+"browser": "firefox",
+"server": "asterix",
+"count": 100,
+"cleanup": true
+}

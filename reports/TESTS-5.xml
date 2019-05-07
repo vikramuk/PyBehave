@@ -1,0 +1,25 @@
+<testsuite errors="0" failures="1" hostname="LP-5CD84715D5" name="5.Blog" skipped="0" tests="1" time="0.01504" timestamp="2019-05-06T23:26:13.965098"><testcase classname="5.Blog" name="Publishing the article" status="failed" time="0.01504"><failure message="None" type="NoneType">
+<![CDATA[
+Failing step: And the article should be published  # Note: will query the database ... undefined in 0.000s
+Location: feature/5.feature:10
+None]]>
+</failure><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: Publishing the article
+    Given I am an author user ... passed in 0.003s
+    And I have an article ... passed in 0.003s
+    When I go to the article page ... passed in 0.003s
+    And I press the publish button ... passed in 0.003s
+    Then I should not see the error message ... passed in 0.003s
+    And the article should be published  # Note: will query the database ... undefined in 0.000s
+    Then I can check ... skipped in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+
+Captured stdout:
+STEP: Given I am an author user
+
+]]>
+</system-out></testcase></testsuite>

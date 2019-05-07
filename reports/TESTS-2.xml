@@ -1,0 +1,38 @@
+<testsuite errors="0" failures="1" hostname="LP-5CD84715D5" name="2.Test" skipped="0" tests="1" time="0.014038" timestamp="2019-05-06T23:26:13.858136"><testcase classname="2.Test" name="Arguments for given, when, then" status="failed" time="0.014038"><failure message="" type="AssertionError">
+<![CDATA[
+Failing step: Then I should have 0 cucumbers ... failed in 0.006s
+Location: feature/2.feature:6
+Traceback (most recent call last):
+  File "c:\users\vikram.uk\pycharmprojects\unittest\venv\lib\site-packages\behave\model.py", line 1329, in run
+    match.run(runner.context)
+  File "c:\users\vikram.uk\pycharmprojects\unittest\venv\lib\site-packages\behave\matchers.py", line 98, in run
+    self.func(context, *args, **kwargs)
+  File "steps\test_2.py", line 20, in step_impl
+    assert context.failed is True
+AssertionError
+
+Captured stdout:
+STEP: Given there are 5 cucumbers
+STEP: When I eat 3 cucumbers
+STEP: When I eat 2 cucumbers
+STEP: Then I should have 0 cucumbers]]>
+</failure><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: Arguments for given, when, then
+    Given there are 5 cucumbers ... passed in 0.002s
+    When I eat 3 cucumbers ... passed in 0.003s
+    And I eat 2 cucumbers ... passed in 0.003s
+    Then I should have 0 cucumbers ... failed in 0.006s
+
+@scenario.end
+--------------------------------------------------------------------------------
+
+Captured stdout:
+STEP: Given there are 5 cucumbers
+STEP: When I eat 3 cucumbers
+STEP: When I eat 2 cucumbers
+STEP: Then I should have 0 cucumbers
+
+]]>
+</system-out></testcase></testsuite>

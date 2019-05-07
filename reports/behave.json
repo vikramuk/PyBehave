@@ -1,0 +1,68 @@
+[
+	{
+		"keyword": "Feature",
+		"name": "My test feature with the Behave BDD",
+		"tags": [],
+		"location": "feature/Hello.feature:1",
+		"status": "passed",
+		"elements": [
+			{
+				"type": "scenario",
+				"keyword": "Scenario",
+				"name": "A simple test",
+				"tags": [],
+				"location": "feature/Hello.feature:2",
+				"steps": [
+					{
+						"keyword": "Given",
+						"step_type": "given",
+						"name": "you are happy",
+						"location": "feature/Hello.feature:3",
+						"match": {
+							"location": "steps/test_Hello.py:3",
+							"arguments": []
+						},
+						"result": {
+							"status": "passed",
+							"duration": 0.015242338180541993
+						}
+					},
+					{
+						"keyword": "When",
+						"step_type": "when",
+						"name": "someone says hi",
+						"location": "feature/Hello.feature:4",
+						"match": {
+							"location": "steps/test_Hello.py:7",
+							"arguments": [
+								{
+									"value": "hi",
+									"name": "s"
+								}
+							]
+						},
+						"result": {
+							"status": "passed",
+							"duration": 0.0
+						}
+					},
+					{
+						"keyword": "Then",
+						"step_type": "then",
+						"name": "you smile",
+						"location": "feature/Hello.feature:5",
+						"match": {
+							"location": "steps/test_Hello.py:13",
+							"arguments": []
+						},
+						"result": {
+							"status": "passed",
+							"duration": 0.0
+						}
+					}
+				],
+				"status": "passed"
+			}
+		]
+	}
+]

@@ -1,0 +1,153 @@
+Feature: Showing off behave # feature/1.feature:2
+
+  Scenario: Run a simple test          # feature/1.feature:4
+    Given we have behave installed     # steps/test_1.py:3
+    When we implement 5 tests          # steps/test_1.py:7
+    Then behave will test them for us! # steps/test_1.py:12
+
+Feature: Test # feature/2.feature:1
+
+  Scenario: Arguments for given, when, then  # feature/2.feature:2
+    Given there are 5 cucumbers              # steps/test_2.py:2
+    When I eat 3 cucumbers                   # steps/test_2.py:7
+    And I eat 2 cucumbers                    # steps/test_2.py:12
+    Then I should have 0 cucumbers           # steps/test_2.py:17
+      Traceback (most recent call last):
+        File "c:\users\vikram.uk\pycharmprojects\unittest\venv\lib\site-packages\behave\model.py", line 1329, in run
+          match.run(runner.context)
+        File "c:\users\vikram.uk\pycharmprojects\unittest\venv\lib\site-packages\behave\matchers.py", line 98, in run
+          self.func(context, *args, **kwargs)
+        File "steps\test_2.py", line 20, in step_impl
+          assert context.failed is True
+      AssertionError
+      
+      Captured stdout:
+      STEP: Given there are 5 cucumbers
+      STEP: When I eat 3 cucumbers
+      STEP: When I eat 2 cucumbers
+      STEP: Then I should have 0 cucumbers
+
+
+Feature: My test feature with the Behave BDD # feature/3.feature:1
+
+  @Linux @slow
+  Scenario: A simple test#1  # feature/3.feature:4
+    Given you are happy      # steps/test_3.py:3
+    When someone says hi     # steps/test_3.py:7
+    Then you smile           # steps/test_3.py:13
+
+  @WINDOWS @wip
+  Scenario: A simple test#2  # feature/3.feature:11
+    Given you are happy      # steps/test_3.py:3
+    When someone says hi     # steps/test_3.py:7
+    Then you smile           # steps/test_3.py:13
+
+  @use.with_browser=chrome
+  Scenario: A simple test#3  # feature/3.feature:17
+    Given you are happy      # steps/test_3.py:3
+    When someone says hi     # steps/test_3.py:7
+    Then you smile           # steps/test_3.py:13
+
+Feature: parametrized # feature/4.feature:1
+
+  Scenario: Parametrized given, when, thens  # feature/4.feature:3
+    Given there are <start> cucumbers        # steps/test_4.py:22
+    When I eat <eat> cucumbers               # steps/test_4.py:26
+    Then I should have <left> cucumbers      # steps/test_4.py:31
+      | start | eat | left |
+      | 5     | 2   | 3    |
+
+Feature: Blog # feature/5.feature:1
+  A site where you can publish your articles.
+  Scenario: Publishing the article                                       # feature/5.feature:4
+    Given I am an author user                                            # steps/test_5.py:4
+    And I have an article                                                # steps/test_5.py:10
+    When I go to the article page                                        # steps/test_5.py:14
+    And I press the publish button                                       # steps/test_5.py:19
+    Then I should not see the error message                              # steps/test_5.py:25
+    And the article should be published  # Note: will query the database # None
+    Then I can check                                                     # None
+
+Feature: Cucumber Basket # feature/6.feature:1
+
+  @cucumber-basket
+  Scenario Outline: Add cucumbers --  Cucumber Counts @1.1  # feature/6.feature:10
+    Given the basket has 0 cucumbers                        # steps/test_6.py:4
+    When 1 cucumbers are added to the basket                # steps/test_6.py:9
+    Then the basket contains 1 cucumbers                    # steps/test_6.py:14
+      Traceback (most recent call last):
+        File "c:\users\vikram.uk\pycharmprojects\unittest\venv\lib\site-packages\behave\model.py", line 1329, in run
+          match.run(runner.context)
+        File "c:\users\vikram.uk\pycharmprojects\unittest\venv\lib\site-packages\behave\matchers.py", line 98, in run
+          self.func(context, *args, **kwargs)
+        File "steps\test_6.py", line 17, in step_impl
+          assert total == initial + more
+      NameError: name 'initial' is not defined
+      
+      Captured stdout:
+      Initial
+      More
+      total
+
+
+  @cucumber-basket
+  Scenario Outline: Add cucumbers --  Cucumber Counts @1.2  # feature/6.feature:11
+    Given the basket has 1 cucumbers                        # steps/test_6.py:4
+    When 2 cucumbers are added to the basket                # steps/test_6.py:9
+    Then the basket contains 3 cucumbers                    # steps/test_6.py:14
+      Traceback (most recent call last):
+        File "c:\users\vikram.uk\pycharmprojects\unittest\venv\lib\site-packages\behave\model.py", line 1329, in run
+          match.run(runner.context)
+        File "c:\users\vikram.uk\pycharmprojects\unittest\venv\lib\site-packages\behave\matchers.py", line 98, in run
+          self.func(context, *args, **kwargs)
+        File "steps\test_6.py", line 17, in step_impl
+          assert total == initial + more
+      NameError: name 'initial' is not defined
+      
+      Captured stdout:
+      Initial
+      More
+      total
+
+
+  @cucumber-basket
+  Scenario Outline: Add cucumbers --  Cucumber Counts @1.3  # feature/6.feature:12
+    Given the basket has 5 cucumbers                        # steps/test_6.py:4
+    When 4 cucumbers are added to the basket                # steps/test_6.py:9
+    Then the basket contains 9 cucumbers                    # steps/test_6.py:14
+      Traceback (most recent call last):
+        File "c:\users\vikram.uk\pycharmprojects\unittest\venv\lib\site-packages\behave\model.py", line 1329, in run
+          match.run(runner.context)
+        File "c:\users\vikram.uk\pycharmprojects\unittest\venv\lib\site-packages\behave\matchers.py", line 98, in run
+          self.func(context, *args, **kwargs)
+        File "steps\test_6.py", line 17, in step_impl
+          assert total == initial + more
+      NameError: name 'initial' is not defined
+      
+      Captured stdout:
+      Initial
+      More
+      total
+
+
+Feature: Testing Calculator # feature/Calculator.feature:1
+
+  Scenario: Run Calculator    # feature/Calculator.feature:3
+    Given i Launch Calculator # steps/test_calculator.py:4
+    When I start X and Y      # steps/test_calculator.py:9
+    Then the result is Z      # steps/test_calculator.py:14
+      Assertion Failed: 6 != 5
+
+
+Feature: Testing objects # feature/ScenarioOutline.feature:1
+
+  Scenario Outline: Given the inputs below --  Input Variables @1.1  # feature/ScenarioOutline.feature:9
+    Given a {"name": "Fred", "age":2} and [1,2,"three"]              # steps/test_ScenarioOutline.py:5
+    When we insert them                                              # steps/test_ScenarioOutline.py:10
+    Then we confirm the result in the database                       # steps/test_ScenarioOutline.py:15
+
+  Scenario Outline: Given the inputs below --  Input Variables @1.2  # feature/ScenarioOutline.feature:10
+    Given a {"name": "Test", "age":2} and [1,2,"For"]                # steps/test_ScenarioOutline.py:5
+    When we insert them                                              # steps/test_ScenarioOutline.py:10
+    Then we confirm the result in the database                       # steps/test_ScenarioOutline.py:15
+

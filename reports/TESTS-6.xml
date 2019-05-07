@@ -1,0 +1,109 @@
+<testsuite errors="3" failures="0" hostname="LP-5CD84715D5" name="6.Cucumber Basket" skipped="0" tests="3" time="0.024068" timestamp="2019-05-06T23:26:14.018241"><testcase classname="6.Cucumber Basket" name="Add cucumbers --  Cucumber Counts @1.1" status="failed" time="0.007023"><error message="name 'initial' is not defined" type="NameError">
+<![CDATA[
+Failing step: Then the basket contains 1 cucumbers ... failed in 0.004s
+Location: feature/6.feature:7
+Traceback (most recent call last):
+  File "c:\users\vikram.uk\pycharmprojects\unittest\venv\lib\site-packages\behave\model.py", line 1329, in run
+    match.run(runner.context)
+  File "c:\users\vikram.uk\pycharmprojects\unittest\venv\lib\site-packages\behave\matchers.py", line 98, in run
+    self.func(context, *args, **kwargs)
+  File "steps\test_6.py", line 17, in step_impl
+    assert total == initial + more
+NameError: name 'initial' is not defined
+
+Captured stdout:
+Initial
+More
+total]]>
+</error><system-out>
+<![CDATA[
+@scenario.begin
+
+  @cucumber-basket
+  Scenario Outline: Add cucumbers --  Cucumber Counts @1.1
+    Given the basket has 0 cucumbers ... passed in 0.002s
+    When 1 cucumbers are added to the basket ... passed in 0.001s
+    Then the basket contains 1 cucumbers ... failed in 0.004s
+
+@scenario.end
+--------------------------------------------------------------------------------
+
+Captured stdout:
+Initial
+More
+total
+
+]]>
+</system-out></testcase><testcase classname="6.Cucumber Basket" name="Add cucumbers --  Cucumber Counts @1.2" status="failed" time="0.010028"><error message="name 'initial' is not defined" type="NameError">
+<![CDATA[
+Failing step: Then the basket contains 3 cucumbers ... failed in 0.004s
+Location: feature/6.feature:7
+Traceback (most recent call last):
+  File "c:\users\vikram.uk\pycharmprojects\unittest\venv\lib\site-packages\behave\model.py", line 1329, in run
+    match.run(runner.context)
+  File "c:\users\vikram.uk\pycharmprojects\unittest\venv\lib\site-packages\behave\matchers.py", line 98, in run
+    self.func(context, *args, **kwargs)
+  File "steps\test_6.py", line 17, in step_impl
+    assert total == initial + more
+NameError: name 'initial' is not defined
+
+Captured stdout:
+Initial
+More
+total]]>
+</error><system-out>
+<![CDATA[
+@scenario.begin
+
+  @cucumber-basket
+  Scenario Outline: Add cucumbers --  Cucumber Counts @1.2
+    Given the basket has 1 cucumbers ... passed in 0.003s
+    When 2 cucumbers are added to the basket ... passed in 0.003s
+    Then the basket contains 3 cucumbers ... failed in 0.004s
+
+@scenario.end
+--------------------------------------------------------------------------------
+
+Captured stdout:
+Initial
+More
+total
+
+]]>
+</system-out></testcase><testcase classname="6.Cucumber Basket" name="Add cucumbers --  Cucumber Counts @1.3" status="failed" time="0.007017"><error message="name 'initial' is not defined" type="NameError">
+<![CDATA[
+Failing step: Then the basket contains 9 cucumbers ... failed in 0.004s
+Location: feature/6.feature:7
+Traceback (most recent call last):
+  File "c:\users\vikram.uk\pycharmprojects\unittest\venv\lib\site-packages\behave\model.py", line 1329, in run
+    match.run(runner.context)
+  File "c:\users\vikram.uk\pycharmprojects\unittest\venv\lib\site-packages\behave\matchers.py", line 98, in run
+    self.func(context, *args, **kwargs)
+  File "steps\test_6.py", line 17, in step_impl
+    assert total == initial + more
+NameError: name 'initial' is not defined
+
+Captured stdout:
+Initial
+More
+total]]>
+</error><system-out>
+<![CDATA[
+@scenario.begin
+
+  @cucumber-basket
+  Scenario Outline: Add cucumbers --  Cucumber Counts @1.3
+    Given the basket has 5 cucumbers ... passed in 0.002s
+    When 4 cucumbers are added to the basket ... passed in 0.001s
+    Then the basket contains 9 cucumbers ... failed in 0.004s
+
+@scenario.end
+--------------------------------------------------------------------------------
+
+Captured stdout:
+Initial
+More
+total
+
+]]>
+</system-out></testcase></testsuite>

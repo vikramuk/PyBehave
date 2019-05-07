@@ -1,0 +1,17 @@
+<testsuite errors="0" failures="1" hostname="LP-5CD84715D5" name="Calculator.Testing Calculator" skipped="0" tests="1" time="0.005518" timestamp="2019-05-06T23:26:14.040308"><testcase classname="Calculator.Testing Calculator" name="Run Calculator" status="failed" time="0.005518"><failure message="6 != 5" type="AssertionError">
+<![CDATA[
+Failing step: Then the result is Z ... failed in 0.002s
+Location: feature/Calculator.feature:6
+Assertion Failed: 6 != 5]]>
+</failure><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: Run Calculator
+    Given i Launch Calculator ... passed in 0.002s
+    When I start X and Y ... passed in 0.002s
+    Then the result is Z ... failed in 0.002s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase></testsuite>
